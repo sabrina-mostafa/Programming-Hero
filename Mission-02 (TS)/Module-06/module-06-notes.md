@@ -3,7 +3,7 @@
 ## Type Assertion:
 
 - **When Developers know a variable type better then the compiler can assume.**
-- _When a variable's type is any or multiple and in between of the code if it can be sure bu the developer that what will be the type among all the possible types! then developer sets the variable type._
+> _When a variable's type is any or multiple and in between of the code if it can be sure by the developer that what will be the type among all the possible types! then developer sets the variable type._
 
 ## Type Interface:
 

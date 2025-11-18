@@ -41,7 +41,7 @@ console.log(createArrayWithTupleGeneric("2", 5));
 
 
 
-// ------------ a function to admin a student into a specific course ------------
+// ------------ a function to admit a student into a specific course ------------
 
 const addStudentToCourse = <T> (studentInfo: T) => {
     return {

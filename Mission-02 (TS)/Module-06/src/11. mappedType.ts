@@ -23,7 +23,7 @@ type AreaWithNum = {
     [key in keyof AreaNum]: number;
 } 
 type AreaWithStr = {
-    [key in keyof AreaNum]: string;
+    [key in keyof AreaStr]: string;
 } 
 
 type AreaWithGeneric1 <T> = {

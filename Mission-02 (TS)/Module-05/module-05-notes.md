@@ -48,6 +48,8 @@ Imagine:
 
 > A literal type means a type that **represents exactly one specific value**, _not just a general category of values_.
 
+- when a value is used as a type
+
 ### Access Modifier (readonly)
 
 - readonly can be also used for the same purpose.
@@ -218,3 +220,7 @@ So, `null` means:
 ## never type
 
 - this is the type of a function that will never return anything or will never end.
+
+## nullable type:
+
+> when we use _null as a type_
