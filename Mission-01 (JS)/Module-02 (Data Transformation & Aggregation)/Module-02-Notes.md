@@ -1,5 +1,25 @@
 # Module-02:
 
+## What is Data Transformation?
+> Data transformation = changing data from one shape to another
+
+Example:
+- array → object
+- object → array
+- rename fields
+- group data
+- filter data
+
+## What is Data Aggregation?
+> Data aggregation = combining many values into ONE result
+
+Examples:
+- count
+- average
+- min / max
+- grouping totals
+- sum
+
 ## Object VS Map:
 1. Limitation
  - Object converts the **key** of any type to **string**
