@@ -101,8 +101,27 @@ declare global {
 1. npm i -g vercel
 2. vercel login
 3. authenticate the given link
-4. create a file named vercel.json
-5. search for vercel configuration json for express,ts on internet
-6. copy paste the json on the previously created file
-7. vercel --prod    (prod means production)
+4. create a file named `vercel.json`
+5. search for vercel configuration json for express app & ts on internet
+6. copy paste the json on the `vercel.json` file, which will look like:
+```json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/server.js"
+    }
+  ]
+}
+```
+7. vercel --prod   -> (prod means production)
 8. Open Inspect link
+ - Inspect link can view all
+ - Production link is only visible to the owner

@@ -18,6 +18,7 @@ const auth = (...roles: string[]) => {
 
             req.user = decoded;   // set the payload as user on Request
 
+            // checks if any role is sent through the middleware and the roles that are sent on the [...role] includes the token specific user's role
             if(roles.length && !roles.includes(decoded.role)) {
                 return res.status(500).json({
                     error: "Unauthorized!!!",
