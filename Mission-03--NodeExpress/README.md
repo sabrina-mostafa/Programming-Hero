@@ -2,9 +2,9 @@
 
 ## File Structure:
 - `src`
- - *app.ts*  -> (all work related to app)
- - *server.ts*   -> (to listen server)
- - .env
+  - *app.ts*  -> (all work related to app)
+  - *server.ts*   -> (to listen server)
+  - .env
  - .gitignore
  - `config`
   - *db.ts*  -> (DB)
