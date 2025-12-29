@@ -64,6 +64,13 @@ declare global {
   - const config = { .env config infos }
 15. create .gitignore file
   - include .env, node_modules, dist
+16. how to build:
+  - update **package.json**
+```json
+"scripts": {
+  "build": "tsc"
+},
+```
 
 ### Authorization and Authentication:
 1. bcrypt installation: (**for hashing**)
