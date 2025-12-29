@@ -37,7 +37,7 @@ declare global {
 2. npm install express --save
 3. npm i -D typescript
 4. npx tsc --init
-5. make necessary changes in the tsconfig.json file
+5. make necessary changes in the **tsconfig.json** file
   - create *src folder* and *server.ts* file inside it
 6. npm i --save-dev @types/express   -> (*for all types of express*)
 7. npm i -D tsx   -> (*tsx for running typescript code*)
@@ -77,6 +77,15 @@ declare global {
   - jwt.sign({ Payload }, secret, {expiresIn: "desiredTime"})
   - jwt.verify(token, secret)
 
+### Auto-Return System Job:
+- npm install node-cron
+- import cron from "node-cron";
+- `Example:`
+```ts
+cron.schedule("0 * * * *", async () => {
+
+}
+```
 
 ## Deploy project on vercel:
 - steps:
