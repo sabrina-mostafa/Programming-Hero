@@ -72,7 +72,7 @@ Your ERD visually represents the relationships:
 - Enumerations enforce valid values for roles, vehicle types, vehicle status, and booking status.
 
 **ERD Image:**  
-![Vehicle Rental System Lucidchart ERD](https://lucid.app/lucidchart/427f6ac8-5d23-4353-950f-a771669244ae/edit?invitationId=inv_a2b366d3-eb43-4243-aa98-1e1726afe4b3&page=0_0#)
+[Vehicle Rental System Lucidchart ERD](https://lucid.app/lucidchart/427f6ac8-5d23-4353-950f-a771669244ae/edit?invitationId=inv_a2b366d3-eb43-4243-aa98-1e1726afe4b3&page=0_0#)
 
 
 ![ERD](ERD.png)
