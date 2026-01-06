@@ -331,3 +331,70 @@ const staffMember: Staff = {
 * **Union (`|`)** → A value can be **one type OR another**.
 * **Intersection (`&`)** → A value must satisfy **ALL types combined**.
 
+
+-------
+
+# DBMS
+
+## 6. What is a foreign key and why is it important in relational databases?
+
+> A **foreign key** is a column (or a set of columns) in one table that **references the primary key of another table**. Its main purpose is to **create a relationship between two tables**.
+
+**Why it is important:**
+
+* It **maintains referential data integrity**.
+* It **prevents invalid data**, for example, we cannot create a booking for a vehicle that doesn’t exist.
+* It **keeps relationships consistent** when data is updated or deleted.
+* It helps the database **enforce business rules automatically**, not just through application code.
+
+**Example:**
+In a vehicle rental system:
+
+* `Bookings.vehicle_id` is a foreign key referencing `Vehicles.id`.
+* This ensures every booking is linked to a valid vehicle.
+
+**In short:**
+A foreign key connects tables, prevents orphan data, and keeps the database reliable and consistent.
+
+## 7. What is the difference between WHERE and HAVING clauses in SQL?
+
+> The **WHERE** clause is used to filter **rows before grouping** and works on individual records. It cannot be used with aggregate functions like `COUNT` or `SUM`.
+
+> The **HAVING** clause is used to filter **groups after aggregation** and is applied on the result of aggregate functions.
+
+`Example:`
+> "*Think of a sales table where each row represents a product sold on a particular day. If I want to look only at sales where the price was greater than 50, I use WHERE because I am filtering individual rows first. But if I want to see only products whose total quantity sold is more than 15, I use HAVING, because I am filtering after summing up quantities for each product.*"
+
+**In short:**
+* `WHERE filters rows`, `HAVING filters groups`.
+
+
+## 8. What is a primary key and what are its characteristics?
+
+> A **primary key** is a column (or a combination of columns) that **uniquely identifies each record** in a table.
+
+**Characteristics of a Primary Key:**
+
+1. It must contain **unique values** (no duplicates).
+2. It **cannot be NULL**.
+3. Each table can have **only one primary key**.
+4. It ensures **entity integrity**.
+5. It is often used as a **reference in foreign keys** in other tables.
+
+**Example:**
+`student_id` in a `students` table uniquely identifies each student.
+
+
+## 9. What is the difference between INNER JOIN and LEFT JOIN in SQL?
+
+> An **INNER JOIN** returns only the rows where there is a **matching value in both tables**.
+
+> A **LEFT JOIN** returns **all rows from the left table** and the matching rows from the right table. If there is no match, the result contains **NULL values** for the right table’s columns.
+
+`Example:`
+If a user has no bookings:
+- INNER JOIN will exclude that user.
+- LEFT JOIN will include the user with NULL booking details.
+
+**In short:**
+INNER JOIN returns only matched records, while LEFT JOIN returns all records from the left table, matched or not.
